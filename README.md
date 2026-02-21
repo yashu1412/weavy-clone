@@ -128,6 +128,3 @@ src/
 ## Connect with me
 
 If you'd like to connect, feel free to reach out — [Click here](https://github.com/yashu1412)
-
-
->>>>>>> master
