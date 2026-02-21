@@ -15,75 +15,19 @@ import { AppNode } from "@/lib/types";
 
 // Mock response generator for demo purposes
 const generateMockResponse = (nodeLabel: string, prompt: string): string => {
-	const responses = {
-		"Vision Analyst": `📊 **Product Analysis Complete**
+	const responses: Record<string, string> = {
+		"LLM Node #1 — Product Description": "📊 **Product Description Generated**\n\nBased on the product image and details provided:\n\n**Premium Wireless Bluetooth Headphones**\n\nExperience crystal-clear audio with our advanced noise-cancellation technology. These premium headphones deliver exceptional sound quality with deep bass and crisp highs, perfect for music lovers and professionals alike.\n\n**Key Features:**\n- Advanced active noise cancellation for immersive listening\n- Impressive 30-hour battery life for all-day use\n- Comfortable foldable design for easy portability\n- High-fidelity Bluetooth 5.0 connectivity\n- Premium cushioned ear cups for extended comfort\n\n**Perfect for:**\n- Daily commuting and travel\n- Office work and focus sessions\n- Gaming and entertainment\n- Fitness and workout sessions\n\nCrafted with attention to detail and built to last, these headphones combine style, comfort, and exceptional audio performance in one sleek package.",
 
-Based on the product images provided, here's the detailed analysis:
+		"LLM Node #2 — Final Tweet/Post": "🎧 **Unleash Your Audio Experience!**\n\nPremium noise-cancelling headphones with 30-hour battery life 🎵✨\n\n🔹 Crystal-clear sound with deep bass\n🔹 All-day comfort for work and play\n🔹 Foldable design - take anywhere!\n🔹 Perfect for travel, gaming, or focus\n\nLevel up your audio game today! 🚀\n\n#Headphones #AudioTech #NoiseCancelling #Bluetooth #MusicLovers #TechGadgets\n\n**Limited time offer - Free shipping worldwide! 🌍**",
 
-**🎨 Color & Materials:**
-- Primary Color: Classic White with Black accents
-- Materials: Premium mesh upper, rubber sole
-- Branding: Minimalist logo placement
+		"Text #1 (System Prompt)": "You are a professional marketing copywriter.\nGenerate a compelling one-paragraph product description.",
 
-**👟 Design Features:**
-- Sole Type: EVA foam midsole for cushioning
-- Stitching: Reinforced toe cap for durability
-- Style: Athletic lifestyle sneaker
+		"Text #2 (Product Details)": "Product: Wireless Bluetooth Headphones.\nFeatures: Noise cancellation, 30-hour battery, foldable design.",
 
-**⚡ Functional Benefits:**
-- Breathability: Enhanced mesh ventilation
-- Support: Ankle collar padding
-- Comfort: Lightweight construction (approx. 280g)
-
-**🎯 Target Demographic:**
-- Age Group: 18-35 years
-- Style Category: Casual athletic wear
-- Use Case: Daily wear, light exercise
-
-This analysis provides the foundation for creating targeted marketing content across different platforms.`,
-		
-		"Amazon Listing": `🛒 **Premium Athletic Sneakers - Ultimate Comfort & Style**
-
-Experience the perfect blend of performance and style with our cutting-edge athletic sneakers designed for the modern lifestyle enthusiast.
-
-**✨ KEY FEATURES:**
-• **Advanced Breathability** - Premium mesh upper keeps your feet cool and dry all day long
-• **Superior Cushioning** - EVA foam midsole provides exceptional comfort with every step
-• **Durable Construction** - Reinforced toe cap and high-quality stitching ensure long-lasting wear
-• **Lightweight Design** - At just 280g, you'll barely notice you're wearing them
-• **Versatile Style** - Perfect for gym, casual outings, or everyday wear
-
-**🎯 WHY CHOOSE US:**
-- Engineered for performance and comfort
-- Sleek minimalist design that matches any outfit
-- Trusted by thousands of satisfied customers
-- 30-day satisfaction guarantee
-
-**📦 PACKAGE INCLUDES:**
-1x Premium Athletic Sneakers
-1x Storage bag
-1x Care instructions
-
-**⭐ CUSTOMER FAVORITE** - Join thousands who've upgraded their footwear game!`,
-
-		"Instagram Caption": `🔥 Step up your sneaker game! 👟✨
-
-These aren't just shoes - they're a lifestyle statement! 😎
-
-✨ Ultimate comfort meets street style
-🏃‍♂️ Perfect for your daily hustle
-💨 Breathable design keeps you fresh
-🎯 Minimalist vibes, maximum impact
-
-Tag us in your sneakerhead moments! 👇
-
-#SneakerLife #StreetStyle #AthleticWear #MinimalistDesign #ComfortFirst #Sneakerhead #DailyGrind #StyleInspo #FootwearGoals`,
-
-		"SEO Meta Description": `Discover premium athletic sneakers combining comfort, style, and performance. Lightweight design with breathable mesh and superior cushioning. Perfect for daily wear and light exercise. Shop now for free shipping!`
+		"Text #3 (System Prompt)": "You are a social media manager.\nCreate a tweet-length marketing post based on the product image and video frame."
 	};
 
-	return responses[nodeLabel as keyof typeof responses] || 
-		`AI-generated response for ${nodeLabel} based on prompt: "${prompt.substring(0, 100)}..."`;
+	return responses[nodeLabel] || `AI-generated response for ${nodeLabel} based on prompt: "${prompt.substring(0, 100)}..."`;
 };
 
 // Helper to fetch base64
