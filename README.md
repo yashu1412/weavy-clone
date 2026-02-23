@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 # weavy-clone
-=======
-# Weaave - Visual AI Workflow Builder
 ![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
 ![React Flow](https://img.shields.io/badge/React_Flow-12-purple)

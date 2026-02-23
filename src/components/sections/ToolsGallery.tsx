@@ -41,8 +41,8 @@ const ToolsGallery = () => {
         className="absolute inset-0 bg-[#f5f5f5]"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px)
+             linear-gradient(rgba(255, 255, 255, 0.9) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.9) 1px, transparent 1px)
           `,
           backgroundSize: '24px 24px',
           zIndex: 0,
@@ -61,7 +61,7 @@ const ToolsGallery = () => {
       <div className="container relative z-10 px-4 md:px-[5%]" style={{ zIndex: 2 }}>
         <div className="flex flex-col items-center">
           <div className="text-center max-w-[1200px] px-2 pt-20">
-            <h3 className="font-dmsans text-[32px] md:text-[60px] lg:text-[6rem] leading-[1.1] tracking-[-0.03em] text-[#333333] mb-4 md:mb-[24px]">
+            <h3 className="font-dmsans text-[32px] md:text-[60px] lg:text-[6.2rem] leading-[0.9] tracking-[-0.05em] text-[#333333] mb-4 md:mb-[24px]">
               With all the professional <br /> tools you rely on
             </h3>
             <p className="font-dmsans text-[14px] md:text-[16px] lg:text-[1.5rem] text-[#666666] font-normal pt-4">

@@ -57,8 +57,8 @@ const HeroSection = () => {
         className="absolute inset-0 bg-[#e7f0f8]"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px)
+            linear-gradient(rgba(255, 255, 255, 0.9) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.9) 1px, transparent 1px)
           `,
           backgroundSize: '24px 24px',
         }}
@@ -66,7 +66,7 @@ const HeroSection = () => {
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: 'linear-gradient(to bottom, transparent 50%, #ffffff 100%)',
+          backgroundImage: 'linear-gradient(to bottom, transparent 50%,  #dbe3e7 100%)',
         }}
       />
       <div className="absolute mr-2 top-24 md:top-32 left-4 md:left-16 z-10 pointer-events-none select-none max-w-7xl">
@@ -91,7 +91,7 @@ const HeroSection = () => {
       </div>
 
       <div
-        className="absolute bottom-0 md:bottom-[-30px] left-0 md:left-[5%] w-full md:w-[90%] h-[60%] h-[calc(20%+200px)] md:h-[calc(50%+100px)] rounded-b-lg z-1 overflow-hidden bg-gradient-to-b from-transparent to-[#D0D9D2] to-92%"
+        className="absolute bottom-0 md:bottom-[-30px] left-0 md:left-[5%] w-full md:w-[90%] h-[100%] h-[calc(20%+200px)] md:h-[calc(50%+100px)] rounded-b-lg z-1 overflow-hidden bg-gradient-to-b from-transparent to-[#D0D9D2] to-92%"
       >
         <div className="w-full h-full overflow-hidden">
           <ReactFlow

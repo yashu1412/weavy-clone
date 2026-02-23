@@ -96,7 +96,7 @@ const Footer = () => {
       />
 
       {/* main */}
-      <div className="relative bg-[#A8B1A5] max-w-[1344px] min-h-[620px] rounded-none md:rounded-tr-[60px] mt-0 md:mt-1 mr-0 md:mr-16 pt-10 md:pt-28 pb-10 md:pb-10 px-4 md:px-[5%]">
+      <div className="relative bg-[#aeb3a9] max-w-[1344px] min-h-[620px] rounded-none md:rounded-tr-[60px] mt-0 md:mt-1 mr-0 md:mr-16 pt-10 md:pt-28 pb-10 md:pb-10 px-4 md:px-[5%]">
         <div className="max-w-[1440px] mx-auto relative z-10">
           <HeroStatement />
 

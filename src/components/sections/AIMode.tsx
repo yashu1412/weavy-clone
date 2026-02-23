@@ -165,34 +165,34 @@ export default function WorkflowTransition() {
       <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col pt-8 md:pt-16">
         {/* --- HEADER --- */}
         <div className="relative z-40 max-w-[1600px] mx-auto px-6 md:px-16 w-full mb-4 md:mb-8">
-          <p className="text-[13px] md:text-sm text-[#1c1b1b] mb-4 md:mb-6 max-w-[420px]">
+          <p className="text-[13px] md:text-lg font-dmsans text-[#333333] leading-[0.9] mb-4 md:mb-6 max-w-[370px]">
             {workflowAppModeData.heading.subtitle}
           </p>
 
           <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-8">
             <h2
               className={`text-[42px] md:text-[60px] lg:text-[96px] leading-[0.95] font-normal tracking-[-0.03em] transition-colors duration-500 ${
-                isAppMode ? "text-gray-200" : "text-black"
+                isAppMode ? "text-gray-200" : "text-[#333333]"
               }`}
             >
               {workflowAppModeData.heading.part1}
             </h2>
 
-            <div className="flex items-center gap-4">
-              <div className="relative w-[56px] h-[32px] md:w-[60px] md:h-[36px] lg:w-[72px] lg:h-[40px] rounded-full bg-black/10 p-1 flex items-center flex-shrink-0">
+            <div className="flex items-center gap-4 pt-5">
+              <div className="relative w-[60x] h-[40px] md:w-[60px] md:h-[36px] lg:w-[90px] lg:h-[44px] rounded-full bg-[#f7ff9e] p-1 flex items-center flex-shrink-0">
                 <motion.div
                   style={{ opacity: bgOpacity }}
-                  className="absolute inset-0 bg-[#dfff4f] rounded-full"
+                  className="absolute inset-0 bg-[#f7ff9e] rounded-full"
                 />
                 <motion.div
                   style={{ x: toggleX }}
-                  className="relative z-10 w-[24px] h-[24px] md:w-[28px] md:h-[28px] lg:w-[32px] lg:h-[32px] bg-black rounded-full"
+                  className="relative z-10 w-[24px] h-[24px] md:w-[26px] md:h-[26px] lg:w-[38px] lg:h-[38px] bg-black rounded-full"
                 />
               </div>
 
               <h2
                 className={`text-[42px] md:text-[60px] lg:text-[96px] leading-[0.95] font-normal tracking-[-0.03em] transition-colors duration-500 ${
-                  isAppMode ? "text-black" : "text-gray-200"
+                  isAppMode ? "text-black" : "text-[#adadad]"
                 }`}
               >
                 {workflowAppModeData.heading.part2}

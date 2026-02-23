@@ -62,10 +62,10 @@ const ParallaxShowcase = () => {
         }}
       />
       <div className="container mx-auto px-4 md:px-[5%] text-center mb-8 md:mb-16 relative z-10 pt-0" style={{ zIndex: 2 }}>
-        <h2 className="text-[clamp(0rem,8vw,5.5rem)] leading-[0.95] tracking-tight text-[#333333] font-dmsans font-normal mb-4 md:mb-6">
+        <h2 className="text-[clamp(0rem,8vw,5.5rem)] leading-[0.9] tracking-tight text-[#333333] font-dmsans font-normal mb-4 md:mb-6">
           Control the<br />Outcome
         </h2>
-        <p className="max-w-[360px] md:max-w-[600px] mx-auto font-dmsans md:text-lg text-[#333] leading-relaxed px-2">
+        <p className="max-w-[360px] md:max-w-[600px] mx-auto font-dmsans md:text-lg text-[#333] leading-[1.1] px-2">
           Layers, type, and blends—all the tools to bring your wildest ideas
           to life. Your creativity, our compositing power.
         </p>

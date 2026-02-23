@@ -56,7 +56,7 @@ const Header = () => {
               <Link
                 key={link.label}
                 href={link.href || '#'}
-                className={`text-dmsans text-[13px] uppercase tracking-[0.06em] ${hasScrolled ? 'text-black/5' : 'text-black/70'}
+                className={`text-dmsans text-[13px] uppercase tracking-[0.06em] ${hasScrolled ? 'text-[#4b4744]' : 'text-[#4b4744]'}
                   px-4 py-2 rounded-sm transition-all duration-200
                   flex items-center justify-center
                   hover:text-white hover:bg-[#0E0E13]`}

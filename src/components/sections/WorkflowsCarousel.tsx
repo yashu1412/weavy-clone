@@ -88,11 +88,11 @@ export default function WorkflowsCarousel() {
     <section className="hidden md:block bg-[#252525] text-white pt-[40px] pb-[8px] md:pb-[40px] overflow-hidden">
       <div className="container px-[5%] max-w-[1440px] mx-auto">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-[48px]">
-          <div className="max-w-[500px]">
-            <h2 className="text-[6rem] font-medium leading-[1.05] tracking-[-0.03em] mb-[25px]">
+          <div className="max-w-[460px]">
+            <h2 className="text-[5.5rem] font-medium leading-[1.05] tracking-[-0.03em] mb-[25px]">
               Explore Our<br />Workflows
             </h2>
-            <p className="text-white text-[15px] md:text-[16px] tracking-wider">
+            <p className="text-white text-[15px] md:text-lg tracking-wider">
               From multi-layer compositing to matte manipulation, Weavy keeps up
               with your creativity with all the editing tools you recognize and
               rely on.

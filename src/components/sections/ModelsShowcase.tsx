@@ -166,11 +166,11 @@ export default function ModelsShowcase() {
         <GradientOverlay position="bottom" fromColor="#4a7c7c" />
 
         <div className="relative z-30 h-full w-full flex flex-col md:flex-row">
-          <div className="w-full md:w-[30%] h-auto md:h-full flex flex-col justify-start md:justify-center pt-16 md:pt-0 px-6 md:px-0 md:pl-12 lg:pl-20">
-            <h2 className="text-white leading-none tracking-[-0.03em] mb-4 md:mb-6 md:text-[5rem] text-[4rem] ">
+          <div className="w-full md:w-[35%] h-auto md:h-full flex flex-col justify-start md:justify-center pt-16 md:pt-0 px-6 md:px-0 md:pl-12 lg:pl-20">
+            <h2 className="text-white leading-none tracking-[-0.03em] mb-4 md:mb-6 md:text-[6rem] text-[4rem] ">
               Use all AI models, together at last
             </h2>
-            <p className="text-[#c7c4c4] tracking-wider text-sm md:text-base leading-snug max-w-[90%]">
+            <p className="text-white tracking-wider text-sm md:text-base font-dmsans leading-snug max-w-[100%]">
               AI models and professional editing tools in one node-based
               platform. Turn creative vision into scalable workflows without
               compromising quality.
@@ -180,7 +180,7 @@ export default function ModelsShowcase() {
           <div className="w-full md:w-[55%] flex-1 md:h-full flex items-start md:items-center justify-start overflow-hidden px-4 md:px-0 mt-8 md:mt-0">
             <div className="relative h-auto w-full">
               <div
-                className="transition-transform duration-700 ease-out flex flex-col ml-10 mt-2 md:mt-10"
+                className="transition-transform duration-700 ease-out flex flex-col ml-10 mt-2 md:mt-10 md:pt-20 "
                 style={{
                   transform: `translateY(calc(${
                     mounted && isMobile ? "12vh" : "42vh"
@@ -199,7 +199,7 @@ export default function ModelsShowcase() {
                     }`}
                   >
                     <span
-                      className="text-[2.6rem] sm:text-[3.2rem] md:text-[5rem] tracking-tight"
+                      className="text-[2.6rem] sm:text-[3.2rem] md:text-[5.3rem] font-dmsans tracking-tight"
                       style={{
                         lineHeight: 1,
                         color:

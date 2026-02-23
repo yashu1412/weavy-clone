@@ -7,36 +7,34 @@
   - Location: `src/components/workflow/` - Dark theme with `#1a1a1a`, `#111`, `#dfff4f` accent colors
   - Verified: FlowEditor, Header, Sidebar components match dark theme
 
-<!-- - ✅ **Clerk authentication with protected routes**
+- ✅ **Clerk authentication with protected routes**
   - Location: `src/middleware.ts` - Uses `clerkMiddleware` with route protection
-  - Verified: Protected routes configured, public routes: `/`, `/sign-in`, `/sign-up`, `/api/webhook` -->
+  - Verified: Protected routes configured, public routes: `/`, `/sign-in`, `/sign-up`, `/api/webhook`
 
-<!-- - ✅ **Left sidebar with 6 buttons**
+ - ✅ **Left sidebar with 6 buttons**
   - Location: `src/components/workflow/SidebarNodeList.tsx`
-  - Verified: Text, Upload Image, Upload Video, LLM, Crop Image, Extract Frame (all 6 present) -->
-
-<!-- - ✅ **Right sidebar with workflow history panel**
+  - Verified: Text, Upload Image, Upload Video, LLM, Crop Image, Extract Frame (all 6 present)
+   - ✅ **Right sidebar with workflow history panel**
   - Location: `src/components/workflow/HistorySidebar.tsx`
-  - Verified: Shows workflow runs with timestamps, status, duration -->
+  - Verified: Shows workflow runs with timestamps, status, duration 
 
-<!-- - ✅ **Node-level execution history when clicking a run**
+ - ✅ **Node-level execution history when clicking a run**
   - Location: `src/components/workflow/HistorySidebar.tsx` (lines 149-180)
-  - Verified: Expandable runs show node-level details (status, inputs, outputs, execution time) -->
-<!-- 
+  - Verified: Expandable runs show node-level details (status, inputs, outputs, execution time)  
 - ✅ **React Flow canvas with dot grid background**
   - Location: `src/components/workflow/FlowEditor.tsx` (line 261)
-  - Verified: `<Background color="#333" gap={20} size={1} />` -->
+  - Verified: `<Background color="#333" gap={20} size={1} />` 
 
 ### Node Types
-<!-- - ✅ **Functional Text Node with textarea and output handle**
+- ✅ **Functional Text Node with textarea and output handle**
   - Location: `src/components/workflow/nodes/TextNode.tsx`
-  - Verified: Textarea input, output handle for connections -->
+  - Verified: Textarea input, output handle for connections
 
-<!-- - ✅ **Functional Upload Image Node with Transloadit upload and image preview**
+- ✅ **Functional Upload Image Node with Transloadit upload and image preview**
   - Location: `src/components/workflow/nodes/ImageNode.tsx`
-  - Verified: Uses `uploadToTransloadit()` from `src/lib/transloadit.ts`, shows image preview -->
+  - Verified: Uses `uploadToTransloadit()` from `src/lib/transloadit.ts`, shows image preview 
 
-<!-- - ✅ **Functional Upload Video Node with Transloadit upload and video player preview**
+- ✅ **Functional Upload Video Node with Transloadit upload and video player preview**
   - Location: `src/components/workflow/nodes/VideoNode.tsx`
   - Verified: Uses `uploadToTransloadit()`, shows video player with controls
 
@@ -49,25 +47,24 @@
   - Verified: Crop parameters (x, y, width, height), executes via Trigger.dev task
 
 - ✅ **Functional Extract Frame from Video Node (FFmpeg via Trigger.dev)**
-  - Location: `src/components/workflow/nodes/ExtractFrameNode.tsx` + `src/trigger/ffmpeg-tasks.ts` (extractFrameTask) -->
+  - Location: `src/components/workflow/nodes/ExtractFrameNode.tsx` + `src/trigger/ffmpeg-tasks.ts` (extractFrameTask)
   - Verified: Timestamp input (seconds or percentage), executes via Trigger.dev task
 
 ### Execution & Features
-<!-- - ✅ **All node executions via Trigger.dev tasks**
+- ✅ **All node executions via Trigger.dev tasks**
   - Location: `src/app/actions/workflowActions.ts` (executeNodeAction) + `src/trigger/`
-  - Verified: LLM via `generate-text` task, Crop via `crop-image` task, Extract via `extract-frame` task -->
+  - Verified: LLM via `generate-text` task, Crop via `crop-image` task, Extract via `extract-frame` task
 
-<!-- - ✅ **Pulsating glow effect on nodes during execution**
+- ✅ **Pulsating glow effect on nodes during execution**
   - Location: Multiple node components (LLMNode.tsx line 387-389, CropImageNode.tsx line 134-136, ExtractFrameNode.tsx line 111-113)
-  - Verified: `animate-pulse` with `border-[#dfff4f]` glow effect when `status === "loading"` -->
-
-<!-- - ✅ **Pre-built sample workflow (demonstrates all features)**
+  - Verified: `animate-pulse` with `border-[#dfff4f]` glow effect when `status === "loading"` 
+ - ✅ **Pre-built sample workflow (demonstrates all features)**
   - Location: `src/lib/demoWorkflows.ts` (DEMO_WORKFLOWS) + `src/lib/sampleWorkflowData.ts` (PRODUCT_MARKETING_KIT_WORKFLOW)
-  - Verified: `demo-product-listing` workflow with images, LLM nodes, prompts -->
+  - Verified: `demo-product-listing` workflow with images, LLM nodes, prompts
 
-<!-- - ✅ **Node connections with animated purple edges**
+- ✅ **Node connections with animated purple edges**
   - Location: `src/components/workflow/edges/AnimatedEdge.tsx`
-  - Verified: Gradient from pink (`#ec4899`) to lime (`#dfff4f`), animated dash pattern -->
+  - Verified: Gradient from pink (`#ec4899`) to lime (`#dfff4f`), animated dash pattern
 
 ### Backend & Validation
 - ✅ **API routes with Zod validation**

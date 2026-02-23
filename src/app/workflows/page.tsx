@@ -13,7 +13,24 @@ import { useUser } from "@clerk/nextjs";
 
 import { PRODUCT_MARKETING_KIT_WORKFLOW } from "@/lib/sampleWorkflowData";
 
+// Suppress hydration errors caused by browser extensions
+const useSuppressHydrationWarning = () => {
+    useEffect(() => {
+        const originalError = console.error;
+        console.error = (...args) => {
+            if (typeof args[0] === 'string' && args[0].includes('Hydration failed because')) {
+                return;
+            }
+            originalError.apply(console, args);
+        };
+        return () => {
+            console.error = originalError;
+        };
+    }, []);
+};
+
 export default function DashboardPage() {
+    useSuppressHydrationWarning();
     const router = useRouter();
     const { user } = useUser();
     const [workflows, setWorkflows] = useState<Workflow[]>([]);
