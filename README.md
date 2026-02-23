@@ -124,20 +124,7 @@ src/
 └── prisma/              # Database schema
 ```
 
-## Documentation
-
-| Document | Description |
-|----------|-------------|
-| [High-Level Design (HLD)](docs/HLD.md) | System architecture, components, and data flow |
-| [Low-Level Design (LLD)](docs/LLD.md) | Database schema, API endpoints, and execution flow |
-
-## License
-
-MIT License - see [LICENSE](LICENSE) file for details.
 
 ## Connect with me
 
 If you'd like to connect, feel free to reach out — [Click here](https://github.com/yashu1412)
-
-
->>>>>>> master
