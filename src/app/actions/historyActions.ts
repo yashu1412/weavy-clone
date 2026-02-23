@@ -54,7 +54,7 @@ export async function getWorkflowHistoryAction(workflowId: string) {
         // Fetch runs with detailed node executions
         const runs = await prisma.workflowRun.findMany({
             where: {
-                workflowId: numericId,
+                workflowId: workflowId,
             },
             include: {
                 nodeExecutions: {

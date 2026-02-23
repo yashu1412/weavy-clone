@@ -31,7 +31,7 @@ export default function HistorySidebar({ workflowId, isOpen, onClose }: HistoryS
 
 			if (!isMounted) return;
 
-			if (res.success && res.runs) {
+			if (res.success && 'runs' in res) {
 				setRuns(res.runs);
 
 				const latestRun = res.runs[0];
