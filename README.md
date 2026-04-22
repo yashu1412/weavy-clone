@@ -11,7 +11,6 @@ A pixel-perfect clone of [Weaave.ai](https://weavy.ai) — a visual workflow bui
 
 
 
-**Watch the Demo:** [Click here to watch](https://drive.google.com/file/d/1nvQmwF1iAUaH0JjeI3jRUtwsZ-R7XV3T/view?usp=sharing)
 
 ---
 
